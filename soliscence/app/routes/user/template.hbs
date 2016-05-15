@@ -1,0 +1,42 @@
+<div class="ui padded center aligned grid">
+  <div class="four wide column">
+    {{user-card user=model.user}}
+  </div>
+
+  <div class="eight wide column">
+    {{!-- <form action="#" class="ui form">
+      <div class="field">
+        {{input type="string" value=model.newTask.title }}
+      </div>
+    </form> --}}
+      <div class="ui blue segment">
+        <div class="ui right labeled fluid input">
+          {{input type="text" value=model.newTask.title placeholder="What needs to get done?"}}
+          <button class="ui blue right labeled icon button">
+            Save {{icon 'check'}}
+          </button>
+        </div>
+      </div>
+
+    {{task-list tasks=(reject-by 'isNew' true model.tasks)}}
+  </div>
+
+  <div class="four wide column">
+    <div class="ui blue segment">
+      <h3 class="ui header">
+        Notes
+      </h3>
+      <form class="ui form">
+        <div class="field">
+          {{textarea}}
+        </div>
+        <div class="field">
+          <button class="ui blue right labeled icon button">
+            Save Notes {{icon 'add'}}
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,28 @@
+<div class="ui blue card">
+  <div class="ui image">
+    <img src="matthew.png" alt="placeholder" />
+  </div>
+
+  <div class="content">
+    <h1 class="header">
+      {{user.name}}
+    </h1>
+    <div class="meta">
+      <span class="date">Joined {{moment-format user.createdAt}}</span>
+    </div>
+    <div class="summary">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore
+      et dolore magna aliqua. Ut enim ad minim veniam,
+       quis nostrud exercitation ullamco laboris nisi.
+    </div>
+  </div>
+  <div class="extra content">
+    <label>Newsletter: </label>
+    {{input type='checkbox' checked=user.newsletter}}
+    <a href="mailto:{{user.email}}">
+      {{icon 'email'}}
+      {{user.email}}
+    </a>
+  </div>
+</div>

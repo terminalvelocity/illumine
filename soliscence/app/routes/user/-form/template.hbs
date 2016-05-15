@@ -1,0 +1,29 @@
+<form {{action "save" on="submit"}} class="ui form">
+  <div class="field">
+    <label>
+      Name
+      {{input type="text" value=model.name}}
+    </label>
+  </div>
+  <div class="field">
+    <label>
+      Email
+      {{input type="text" value=model.email}}
+    </label>
+  </div>
+  <div class="field">
+    <label>
+      Newsletter
+      {{input type="text" value=model.newsletter}}
+    </label>
+  </div>
+  <div class="field">
+    <label>
+      Cart
+      {{input type="text" value=model.cart}}
+    </label>
+  </div>
+  <div class="field">
+    <input type="submit" value="Save" class="ui button primary">
+  </div>
+</form>
