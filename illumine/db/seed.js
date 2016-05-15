@@ -18,7 +18,7 @@ export default async () => {
     [...range(1, 100)].map(n => {
       return Task.create({
         title: faker.hacker.phrase(),
-        'is-complete': faker.random.boolean(),
+        isComplete: faker.random.boolean(),
         userId: faker.helpers.randomize([...range(1, 10)])
       });
     })

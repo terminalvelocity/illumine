@@ -3,7 +3,7 @@ export function up(schema) {
     table.increments('id');
     table.string('name');
     table.string('email');
-    table.boolean('newsletter');
+    table.boolean('newsletter').default(true);
     table.timestamps();
 
     table.index([

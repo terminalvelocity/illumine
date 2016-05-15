@@ -10,9 +10,12 @@
       </div>
     </form> --}}
       <div class="ui blue segment">
+        <h3 class="ui header">
+          Remaining Tasks: {{incompleteTasks.length}}
+        </h3>
         <div class="ui right labeled fluid input">
-          {{input type="text" value=model.newTask.title placeholder="What needs to get done?"}}
-          <button class="ui blue right labeled icon button">
+          {{input type="text" name="newTask" value=model.newTask.title placeholder="What needs to get done?"}}
+          <button class="ui blue right labeled icon button" {{action 'create' model.newTask}}>
             Save {{icon 'check'}}
           </button>
         </div>

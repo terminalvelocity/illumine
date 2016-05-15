@@ -5,8 +5,8 @@ export default Ember.Component.extend({
   classNames: 'four wide column'.w(),
   actions: {
     toggleComplete(task) {
-      task.toggleProperty('isComplete');
-      console.log(task);
+      const complete = task.get('isComplete');
+      task.set('isComplete', !!complete);
       task.save();
     }
   }

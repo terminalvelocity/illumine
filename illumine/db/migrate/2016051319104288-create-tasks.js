@@ -1,7 +1,7 @@
 export function up(schema) {
   return schema.createTable('tasks', table => {
     table.increments('id');
-    table.boolean('isComplete');
+    table.boolean('is_complete').default(false);
     table.string('title');
     table.integer('user_id');
     table.timestamps();
