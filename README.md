@@ -10,6 +10,8 @@
 **Soliscence** - ([_Ember_](https://github.com/emberjs/ember.js))
 > Serotiny is an ecological adaptation exhibited by some seed plants, in which seed release occurs in response to an environmental trigger, rather than spontaneously at seed maturation. Seeds activated from warming by the sun are called soliscence
 
+![](screenshot.png)
+
 ### Getting Started
 
 1. clone this repo
