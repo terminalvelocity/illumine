@@ -14,8 +14,10 @@
 
 1. clone this repo
 2. `cd illumine && npm i`
-3. `lux db:create && lux db:migrate && lux db:seed`
-4. `cd ../soliscence` && npm i && bower i
+3. `npm run seed`
+  - which runs an npm script to execute the following commands
+  - ~~`lux db:create && lux db:migrate && lux db:seed`~~
+4. `cd ../soliscence && npm i && bower i`
 
 Now fire up both servers
 `lux s` `ember s`
